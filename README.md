@@ -14,6 +14,9 @@ node 02_hello_world_function.js
 node 03_hello_world_server.js   
 node 04_hello_world_server.js   
 
+node 05_echo_server.js
+curl -d 'test' http://localhost:8080
+
 # Play with npm
 npm install uuid   
 node   
