@@ -1,7 +1,7 @@
 var http = require('http');
-var port = parseInt(process.argv[2], 10) || 8080;
+var port = 8080;
 
-http.createServer(function(req, res) {
+http.createServer(function handleRequest(req, res) {
   res.writeHead(200, {'content-type': 'text/plain'});
   res.end('Hello World!');
 }).listen(port);
